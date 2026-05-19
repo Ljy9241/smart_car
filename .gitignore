@@ -21,3 +21,46 @@ rad.json
 *.flf
 #Test results file
 TestResults.xml
+
+# --- Keil 项目专属忽略规则 ---
+
+# 忽略编译生成的中间文件和输出文件夹
+Objects/
+Listings/
+
+# 忽略 Keil 自动生成的用户个人配置文件（这些文件经常变，且包含个人界面布局）
+*.uvgui.*
+*.uvopt
+*.uvoptx
+
+# 忽略编译产生的所有中间临时文件
+*.bak
+*.ddk
+*.edk
+*.lst
+*.lnp
+*.mpf
+*.mpj
+*.obj
+*.omf
+*.plg
+*.rpt
+*.tmp
+*.d
+*.i
+*.crf
+*.o
+*.axf
+*.elf
+*.map
+*.build_log.htm
+*.log
+### 忽略 本项目 特定的中间文件
+list/PWM   
+
+# 忽略 JLink 等调试器产生的日志文件
+JLinkLog.txt
+JLinkSettings.ini
+
+# 如果你用的是 VS Code，也可以忽略它的本地配置（可选）
+.vscode/
